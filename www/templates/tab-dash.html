@@ -1,0 +1,16 @@
+<ion-view view-title="Add Picture">
+  <ion-content class="padding">
+   <p>
+       You can either take a picture or load a picture from your device to determine the happiness of those in the picture.
+   </p>
+
+   <button class="button icon-left ion-camera button-full button-assertive" ng-click="takePicture()">Take a Picture</button>
+      <p style="text-align:center; width: 100%">or</p>
+   <button class="button icon-left ion-folder button-full button-positive" ng-click="selectPicture()">Select a Picture</button>
+
+      <img id="myImage" width=400 height=234>
+      <img id="cropped" width=105 height=105>
+      <canvas id="canvas" width=105 height=105></canvas>
+
+  </ion-content>
+</ion-view>
